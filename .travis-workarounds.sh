@@ -12,7 +12,7 @@ if [[ "${TOXENV}" == "pypy" ]]; then
 fi
 
 if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
-    brew update > /dev/null
+    brew update  # > /dev/null
 
     brew reinstall python
 
